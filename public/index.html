@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel='icon' href="logo.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JustTryDontBeShy </title>
+    <link rel="stylesheet" href="/style.css">
+    
+    <style type="text/css">
+    
+      .block{
+        position: relative;
+        width: 500px;
+        height: 450px;
+        background: #000;
+        color: #fff;
+        font-size: 48px;
+        font-weight: bold;
+        line-height: 230px;
+        text-align: center;
+        text-transform: uppercase;
+      }
+      .block:before,
+      .block:after{
+        content: '';
+        position: absolute;
+        top: -3px;
+        left: -3px;
+        width: calc(100% + 6px);
+        height: calc(100% + 6px);
+        background: linear-gradient(45deg, red, yellow, green, blue, yellow, purple);
+        z-index: -1;
+        background-size: 400%;
+        animation: borderbg 40s linear infinite;
+      }
+      @keyframes borderbg {
+        0%{
+          background-position: 0 0 ;
+        }
+        50%{
+          background-position: 400% 0;
+        }
+        100%{
+          background-position: 0 0 ;
+        }
+      }
+      .block:after{
+        filter: blur(40px);
+      }
+    </style>
+            <script
+            async
+            src="https://unpkg.com/es-module-shims@1.3.6/dist/es-module-shims.js"
+            ></script>
+
+            <script type="importmap">
+            {
+                "imports": {
+                    "three": "./build/three.module.js"
+                }
+            }
+            </script>
+  </head>
+  <body>
+
+    <canvas id="bg"></canvas>   
+
+    <main>
+  
+      <header>
+        <h1>Zeljko Tomic</h1>
+        <p><img src="chemistry.png" alt="" style="width: 50px;"> Welcome to my website!🚀</p>
+      </header>
+
+
+      <blockquote >
+        <p style="color:blue; font-size:30px"> FOR ALL THOSE WHO ARE EAGER TO LEARN, KNOWLEDGE AND CONTEMPLATION ARE A SOURCE OF SATISFACTION
+        <br> <b  style="color:black"> ZA SVE ONE, KOJI SU ŽELJNI UČENJA, ZNANJE I KONTEMPLACIJA SU IZVOR ZADOVOLJSTVA.</b></p>
+      </blockquote>
+
+      <section>
+        <h2>📜 Susret Lao Cea i Konfucija</h2>
+        <p>
+          Konfucije je dosao kod Lao Cea, i pitao ga: 
+        </p>
+
+        <p>
+          - Šta je dobro? Šta je zlo? Daj jasno opredeljenje. Posto je coveku neophodno da se na nesto osloni u svom delovanju.
+        </p>
+
+        <p>
+          Lao Ce je rekao:
+        </p>
+        <p>
+          - Opredeljenja stvaraju konfuziju, jer podrazumevaju razdvajanje. Kad kazete da je jabuka jabuka, a covek je covek ...
+           vi ih razdvajate. Vi kazete da covjek ne jede jabuku. Zivot je jedno kretanje, u tom trenutku, kada ste dali opredjeljenje stvarate konfuziju.
+            Sve definicije su mrtve, a zivot je uvek u kretanju. Detinjstvo se kreće prema mladosti, mladosti prema zrelosti, itd, zdravlje se kreće prema bolesti,
+             bolest prema zdravlju. Gdje ćete povući liniju, kako bi ih razdvojili? Zbog toga su opredjeljenja uvijek lažna, ona produžavaju neistinu, tako ne opredeljujte! Ne govorite sta je dobro, a sta je zlo.
+        </p>
+        <p>
+          Konfucije je pitao: 
+        </p>
+        <p>
+          - Kako onda voditi i usmeravati ljude? Kako ih uciti? Kako ih uciniti boljim i moralnijim?
+        </p>
+        <p>
+          Lao Ce je odgovorio:
+        </p>
+        <p>
+          - Kada neko pokuša da napravi drugog boljim, u mojim ocima to predstavlja greh.
+           Sto vise gospodari pokusavaju da stvore red, tim je visi nered! Prepustite svakog samom sebe!
+        </p>
+        <p>
+          - Ta pozicija izgleda opasno. Da li se drustvo moze zasnivati na toj poziciji?
+           - Konfucije je produzavao da pita, a Lao Ce je samo ponavljao:
+        </p>
+        <p>
+          - Priroda je dovoljna, ne treba joj nikakav moral, priroda je prirodna, ona nije prinudna, ona je spontana.
+           U njoj je dovoljno nevinosti! Znanje nije potrebno!
+        </p>
+        <p>
+          Konfucije je otisao zbunjen.
+           Nije mogao da spava celu noć. Kada su ga ucenici pitali o susretu sa Lao Ceom, on je odgovorio:
+        </p>
+        <p>
+          - To nije covek, to je - opasnost. Izbegavajte ga!
+        </p>
+        <p>
+          Kada je Konfucije otisao, Lao-Ce se dugo smejao. Svojim ucenicima je rekao:
+        </p>
+        <p>
+          - Um je barijera za razumevanje, cak i um Konfucija! Nije me uopšte razumio.
+           I bez obzira šta kasnije da kaze o meni, bice neistina. On smatra da stvara red u svetu!
+           Red je svojstven svetu, on je uvek tu. A onaj ko pokusava da stvara red, stvara nered.
+        </p>
+        <p>
+
+        </p>
+
+      </section> 
+    
+      <section class="light">
+       <h2>👩🏽‍🚀 New projects coming soon!
+       </h2>
+         </section> 
+     
+
+        
+
+
+
+      <section  class="left block" >
+       <a style="color:blue" href="index2.html"><h3 style="position: absolute;top: -30px;" > 👨‍🔬 Work <b style="color:orange" >Just try</b>  </h3></a> 
+      </section>
+   
+
+      <blockquote>
+        <p>Thanks for visiting!</p>
+      </blockquote> 
+
+
+    </main>
+    
+    <main style="width:900px">
+      <table style="position:fixed;right:0px;top: 10px; background-color:black;
+       width:35px;height:120px;border-radius:20px;border:2px solid #cc7a00"   >
+        <td></td>
+      </table>
+  
+  
+      <table style="position:fixed;"   >
+          <tr >
+            <td id="image" ; style="position:fixed;top:27px;right:4px"> <a href="https://www.instagram.com/justtrydontbeshy.zt/" target="_blank"  ><img src="zein2.png" width="26"  >  </a></td>
+            <td id="image1" ; style="position:fixed;top:60px;right:7px"><a href="https://www.facebook.com/zeljko.tomic.988926/" target="_blank"  ><img src="face.png" width="20"  >  </a></td>
+            <td id="image2" ; style="position:fixed;top:90px; right:7px" ><a href="https://www.youtube.com/channel/UCwM8WBm70NjM70ewgjwh8Ng" target="_blank"  ><img src="tube.png" width="19"  >  </a></td>
+          </tr>
+  
+  
+      </table>
+    </main>
+
+    
+
+    <script type="module" src="client.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </body>

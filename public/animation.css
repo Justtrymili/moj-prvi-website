@@ -1,0 +1,133 @@
+.box-animation:hover{
+    position: relative;
+    animation-name: change-color;
+    animation-duration: 4s;
+    animation-iteration-count: 2;
+
+    }
+
+@keyframes change-color {
+  from{background-color: pink;border-radius: 25px;}
+  to {background-color:lightblue;
+  border-radius: 25px}
+}
+
+.svgBox{width: 300px;
+        height: 200px;}
+.svgBox svg{
+  fill:none;
+  stroke: black;
+  stroke-width:12px;
+  margin-left: 820px;
+  margin-top: 245px;
+  transform: scale(0.5);
+  stroke:url(#col);
+  stroke-dasharray:60 172;
+  stroke-linecap:round;
+  animation:oj 2s linear infinite;
+  position: absolute;
+  top: 0;
+  left:0;
+
+}
+
+@keyframes oj {
+    0%{
+      stroke-dashoffset:0;
+    }
+    100%{
+      stroke-dashoffset: 232;
+    }
+
+
+}
+.svgBox svg:nth-of-type(1){
+    animation: none;
+    stroke: #222;
+    stroke-dasharray: none;
+
+}
+.svgBox svg:nth-of-type(2){
+    filter: blur(10px);
+
+}
+
+
+
+
+
+
+
+
+
+
+.container2{
+	width: 300px;
+	height: 300px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+#nucleus{
+	width: 10px;
+	height: 10px;
+	background: radial-gradient(#0015FF,#202777);
+	border-radius: 50%;
+	box-shadow: 0 0 3px 2px #000A78;
+	position: absolute;
+}
+#o-1,#o-2,#o-3{
+	width: 80px;
+	height: 80px;
+	border: 5px solid #FFFFFF;
+	border-radius: 50%;
+	position: absolute;
+}
+#o-1:after,#o-2:after,#o-3:after{
+	content: "";
+	width: 10px;
+	height: 10px;
+	background: #FF1E00;
+	border-radius: 50%;
+	position: absolute;
+	left: 60px;
+}
+#o-1{
+	animation: rotate1 5s linear infinite;
+}
+#o-2{
+  animation: rotate2 5s linear infinite;
+}
+#o-3{
+	animation: rotate3 5s linear infinite;
+}
+@keyframes rotate1{
+	from{
+		transform: rotateX(0deg) rotateY(75deg) rotateZ(180deg);
+	}
+	to {
+		transform: rotateX(0deg) rotateY(75deg) rotateZ(540deg);
+	}
+}
+@keyframes rotate2{
+	from{
+		transform: rotateX(106deg) rotateY(154deg) rotateZ(-80deg);
+	}
+	to {
+		transform: rotateX(106deg) rotateY(154deg) rotateZ(280deg);
+	}
+}
+@keyframes rotate3{
+	from{
+		transform: rotateX(-106deg) rotateY(149deg) rotateZ(130deg);
+	}
+	to {
+		transform: rotateX(-106deg) rotateY(149deg) rotateZ(490deg);
+	}
+}
+
+
