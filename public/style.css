@@ -240,7 +240,14 @@ html{
   height: -webkit-fill-available;
 
 }
-  body { 
-    height: 100vh;
-    height: -webkit-fill-available;
+
+.body {    
+  max-width: 650px;
+  margin: 20 auto;
+ padding: 20px;
+
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  height: -webkit-fill-available;
   }
