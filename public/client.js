@@ -135,16 +135,16 @@ image.addEventListener("mouseover", function(){
   this.width ="29"
 });
 image.addEventListener("mouseout", function(){
-  this.width ="26";
+  this.width ="27";
 
 
 });
 var image1 = document.getElementById("image1");
 image1.addEventListener("mouseover", function(){
-  this.width ="22"
+  this.width ="23"
 });
 image1.addEventListener("mouseout", function(){
-  this.width ="20";
+  this.width ="21";
 
 
 });
@@ -153,7 +153,7 @@ image2.addEventListener("mouseover", function(){
   this.width ="22"
 });
 image2.addEventListener("mouseout", function(){
-  this.width ="19";
+  this.width ="20";
 
 
 });
